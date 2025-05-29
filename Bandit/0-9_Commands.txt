@@ -1,0 +1,32 @@
+Level 0
+cat readme
+
+Level 1
+cat ./-
+
+Level 2
+cat spaces\ in\ this\ filename
+
+Level 3
+cat ...Hiding-From-You
+
+Level 4
+find . -type f | xargs file
+cat ./-file07
+
+Level 5
+find . -type f -size 1033c ! -executable
+cat ./maybehere07/.file2
+
+Level 6
+find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null
+cat /var/lib/dpkg/info/bandit7.password
+
+Level 7
+strings data.txt | grep "millionth"
+
+Level 8
+sort data.txt | uniq -c
+
+Level 9
+strings data.txt | grep "="
