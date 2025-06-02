@@ -1,0 +1,32 @@
+Level 10
+base64 -d data.txt
+
+Level 11
+cat data.txt (then CyberChef ROT13)
+
+Level 12
+file data.txt (then repeatedly use decompression commands like gzip -d, bzip2 -d, tar -xf, cat etc. to find the file)
+
+Level 13
+ssh -i sshkey.private bandit14@localhost -p 2220
+cat /etc/bandit_pass/bandit14
+
+Level 14
+nc localhost 30000 (then enter password from Level 13)
+
+Level 15
+ncat -ssl localhost 30001 (then enter password from Level 14)
+
+Level 16
+nmap localhost -p 31000-32000
+ncat -ssl localhost 31790 (then enter password from Level 15)
+
+Level 17
+diff passwords.new passwords.old
+
+Level 18
+ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/sh
+cat readme
+
+Level 19
+./bandit20-do cat /etc/bandit_pass/bandit20
